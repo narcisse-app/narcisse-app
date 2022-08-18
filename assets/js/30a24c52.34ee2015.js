@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknarcisse_app=self.webpackChunknarcisse_app||[]).push([[453],{8521:s=>{s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/hello","name":"hello","count":2,"permalink":"/blog/tags/hello"}')}}]);

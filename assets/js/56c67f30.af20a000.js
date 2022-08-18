@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknarcisse_app=self.webpackChunknarcisse_app||[]).push([[917],{6260:s=>{s.exports=JSON.parse('{"allTagsPath":"/narcisse-app/blog/tags","slug":"/narcisse-app/blog/tags/hello","name":"hello","count":2,"permalink":"/narcisse-app/blog/tags/hello"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknarcisse_app=self.webpackChunknarcisse_app||[]).push([[360],{3757:s=>{s.exports=JSON.parse('{"allTagsPath":"/narcisse-app/blog/tags","slug":"/narcisse-app/blog/tags/docusaurus","name":"docusaurus","count":4,"permalink":"/narcisse-app/blog/tags/docusaurus"}')}}]);
