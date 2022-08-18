@@ -1,0 +1,81 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/narcisse/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/narcisse",
+        "index": "apps/narcisse/src/index.html",
+        "baseHref": "/",
+        "main": "apps/narcisse/src/main.tsx",
+        "polyfills": "apps/narcisse/src/polyfills.ts",
+        "tsConfig": "apps/narcisse/tsconfig.app.json",
+        "assets": ["apps/narcisse/src/favicon.ico", "apps/narcisse/src/assets"],
+        "styles": [],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/narcisse/src/environments/environment.ts",
+              "with": "apps/narcisse/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "narcisse:build",
+        "hmr": true,
+        "proxyConfig": "apps/narcisse/proxy.conf.json"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "narcisse:build:development"
+        },
+        "production": {
+          "buildTarget": "narcisse:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/narcisse/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/narcisse"],
+      "options": {
+        "jestConfig": "apps/narcisse/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
