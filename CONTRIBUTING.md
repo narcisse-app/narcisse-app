@@ -31,6 +31,27 @@ yarn run test --watch
 
 **Please update yarn lock file (`yarn.lock`) if you add or update dependencies.**
 
+## Commit messages
+
+We follow the [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) convention for our commit messages.
+They will be used to generate version numbers, changelogs, and tags.
+
+### Commit types
+
+| type       | description                                                                                                    |
+| ---------- | -------------------------------------------------------------------------------------------------------------- |
+| `build`    | Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)            |
+| `ci`       | Changes to CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)        |
+| `chore`    | Changes wich doesn't change source code or tests e.g. chnages to the build process, auxiliary tools, libraries |
+| `docs`     | Documentation only changes                                                                                     |
+| `feat`     | **A new feature**                                                                                              |
+| `fix`      | **A bug fix**                                                                                                  |
+| `perf`     | A code change that improves performance                                                                        |
+| `refactor` | A code change that neither fixes a bug nor adds a feature                                                      |
+| `revert`   | Revert something                                                                                               |
+| `style`    | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)         |
+| `test`     | Adding missing tests or correcting existing tests                                                              |
+
 ## Other notes
 
 - If you have commit access to repository and want to make big change or not sure about something, make a new branch and open pull request.
