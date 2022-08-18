@@ -1,3 +1,5 @@
 module.exports = {
-  '*.{json,js,ts,css,scss,md,yml}': ['prettier --cache --write'],
+  '*.{json,js,ts,css,scss,md,yml,sh}|Dockerfile|.gitignore': [
+    'prettier --cache --write',
+  ],
 };
