@@ -11,7 +11,13 @@ _[Use GitHub interface](https://blog.sapegin.me/all/open-source-for-everyone/) f
 - If it’s your first pull request, watch [this amazing course](http://makeapullrequest.com/) by [Kent C. Dodds](https://twitter.com/kentcdodds).
 - Install [EditorConfig](https://editorconfig.org/) plugin for your code editor to make sure it uses correct settings.
 - Fork the repository and clone your fork.
-- Install dependencies: `npm install`.
+- Install [volta](https://docs.volta.sh/guide/getting-started)
+
+```bash
+curl https://get.volta.sh | bash
+```
+
+- Install dependencies: `yarn`.
 
 ## Development workflow
 
