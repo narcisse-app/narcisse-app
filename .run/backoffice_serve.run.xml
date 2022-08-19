@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration
+    default="false"
+    name="backoffice:serve"
+    type="js.build_tools.nx"
+  >
+    <node-interpreter value="project" />
+    <nxfile value="$PROJECT_DIR$/nx.json" />
+    <tasks>
+      <task value="backoffice:serve" />
+    </tasks>
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>

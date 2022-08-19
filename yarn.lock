@@ -2767,6 +2767,14 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
+"@prettier/plugin-xml@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-xml/-/plugin-xml-2.2.0.tgz#2bc2ae667aa817369fdb939aa7d36ea88105483d"
+  integrity sha512-UWRmygBsyj4bVXvDiqSccwT1kmsorcwQwaIy30yVh8T+Gspx4OlC0shX1y+ZuwXZvgnafmpRYKks0bAu9urJew==
+  dependencies:
+    "@xml-tools/parser" "^1.0.11"
+    prettier ">=2.4.0"
+
 "@rollup/plugin-babel@^5.3.0":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz#04bc0608f4aa4b2e4b1aebf284344d0f68fda283"
@@ -3665,6 +3673,13 @@
   dependencies:
     "@webassemblyjs/ast" "1.11.1"
     "@xtuc/long" "4.2.2"
+
+"@xml-tools/parser@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@xml-tools/parser/-/parser-1.0.11.tgz#a118a14099ea5c3c537e4781fad2fc195b57f8ff"
+  integrity sha512-aKqQ077XnR+oQtHJlrAflaZaL7qZsulWc/i/ZEooar5JiWj1eLt0+Wg28cpa+XLney107wXqneC+oG1IZvxkTA==
+  dependencies:
+    chevrotain "7.1.1"
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
@@ -4679,6 +4694,13 @@ check-more-types@^2.24.0:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/check-more-types/-/check-more-types-2.24.0.tgz#1420ffb10fd444dcfc79b43891bbfffd32a84600"
   integrity sha512-Pj779qHxV2tuapviy1bSZNEL1maXr13bPYpsvSDB68HlYcYuhlDrmGd63i0JHMCLKzc7rUSNIrpdJlhVlNwrxA==
+
+chevrotain@7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/chevrotain/-/chevrotain-7.1.1.tgz#5122814eafd1585a9601f9180a7be9c42d5699c6"
+  integrity sha512-wy3mC1x4ye+O+QkEinVJkPf5u2vsrDIYW9G7ZuwFl6v/Yu0LwUuT2POsb+NUWApebyxfkQq6+yDfRExbnI5rcw==
+  dependencies:
+    regexp-to-ast "0.5.0"
 
 "chokidar@>=3.0.0 <4.0.0", chokidar@^3.4.2, chokidar@^3.5.1, chokidar@^3.5.2, chokidar@^3.5.3:
   version "3.5.3"
@@ -10374,7 +10396,7 @@ prettier-plugin-sh@^0.12.8:
     sh-syntax "^0.3.6"
     synckit "^0.8.1"
 
-prettier@^2.6.2:
+prettier@>=2.4.0, prettier@^2.6.2:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.7.1.tgz#e235806850d057f97bb08368a4f7d899f7760c64"
   integrity sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==
@@ -10921,6 +10943,11 @@ regenerator-transform@^0.15.0:
   integrity sha512-LsrGtPmbYg19bcPHwdtmXwbW+TqNvtY4riE3P83foeHRroMbH6/2ddFBfab3t7kbzc7v7p4wbkIecHImqt0QNg==
   dependencies:
     "@babel/runtime" "^7.8.4"
+
+regexp-to-ast@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/regexp-to-ast/-/regexp-to-ast-0.5.0.tgz#56c73856bee5e1fef7f73a00f1473452ab712a24"
+  integrity sha512-tlbJqcMHnPKI9zSrystikWKwHkBqu2a/Sgw01h3zFjvYrMxEDYHzzoMZnUrbIfpTFEsoRnnviOXNCzFiSc54Qw==
 
 regexp.prototype.flags@^1.4.1, regexp.prototype.flags@^1.4.3:
   version "1.4.3"
