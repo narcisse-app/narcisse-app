@@ -18,7 +18,7 @@
         "assets": ["apps/narcisse/src/favicon.ico", "apps/narcisse/src/assets"],
         "styles": [],
         "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack"
+        "webpackConfig": "apps/narcisse/webpack.config.js"
       },
       "configurations": {
         "development": {
