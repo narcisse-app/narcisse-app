@@ -14,6 +14,7 @@ updates:
       # Use migrations to update @nrwl/* updates.
       # Run `yarn nx migrate latest` instead
       - dependency-name: '@nrwl/*'
+      - dependency-name: 'nx'
       # Run `yarn nx migrate @nx-plus/docusaurus` instead
       - dependency-name: '@nx-plus/docusaurus'
       - dependency-name: '@docusaurus/core'
