@@ -13,7 +13,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'narcisse-app', // Usually your GitHub org/user name.
+  organizationName: 'narcisse-app', // Usually your GitHub org/username.
   projectName: 'narcisse-app', // Usually your repo name.
   trailingSlash: false,
   presets: [
