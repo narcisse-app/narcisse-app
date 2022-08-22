@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@narcisse-app/nx-containers": ["libs/plugins/nx-containers/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

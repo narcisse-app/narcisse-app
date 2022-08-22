@@ -7,6 +7,8 @@
     "backoffice-e2e": "apps/backoffice-e2e",
     "docs": "apps/docs",
     "narcisse": "apps/narcisse",
-    "narcisse-e2e": "apps/narcisse-e2e"
+    "narcisse-e2e": "apps/narcisse-e2e",
+    "plugins-nx-containers": "libs/plugins/nx-containers",
+    "plugins-nx-containers-e2e": "apps/plugins/nx-containers-e2e"
   }
 }
