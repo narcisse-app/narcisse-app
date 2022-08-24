@@ -2,11 +2,11 @@ import { createTreeWithEmptyWorkspace } from '@nrwl/devkit/testing';
 import { Tree, readProjectConfiguration } from '@nrwl/devkit';
 
 import generator from './generator';
-import { PluginsNxContainersGeneratorSchema } from './schema';
+import { AppGeneratorSchema } from './schema';
 
-describe('plugins-nx-containers generator', () => {
+describe('app generator', () => {
   let appTree: Tree;
-  const options: PluginsNxContainersGeneratorSchema = { name: 'test' };
+  const options: AppGeneratorSchema = { name: 'test' };
 
   beforeEach(() => {
     appTree = createTreeWithEmptyWorkspace();

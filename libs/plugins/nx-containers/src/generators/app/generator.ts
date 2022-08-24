@@ -8,9 +8,9 @@ import {
   Tree,
 } from '@nrwl/devkit';
 import * as path from 'path';
-import { PluginsNxContainersGeneratorSchema } from './schema';
+import { AppGeneratorSchema } from './schema';
 
-interface NormalizedSchema extends PluginsNxContainersGeneratorSchema {
+interface NormalizedSchema extends AppGeneratorSchema {
   projectName: string;
   projectRoot: string;
   projectDirectory: string;
@@ -19,14 +19,14 @@ interface NormalizedSchema extends PluginsNxContainersGeneratorSchema {
 
 function normalizeOptions(
   tree: Tree,
-  options: PluginsNxContainersGeneratorSchema
+  options: AppGeneratorSchema
 ): NormalizedSchema {
   const name = names(options.name).fileName;
   const projectDirectory = options.directory
     ? `${names(options.directory).fileName}/${name}`
     : name;
   const projectName = projectDirectory.replace(new RegExp('/', 'g'), '-');
-  const projectRoot = `${getWorkspaceLayout(tree).libsDir}/${projectDirectory}`;
+  const projectRoot = `${getWorkspaceLayout(tree).appsDir}/${projectDirectory}`;
   const parsedTags = options.tags
     ? options.tags.split(',').map((s) => s.trim())
     : [];
@@ -55,18 +55,18 @@ function addFiles(tree: Tree, options: NormalizedSchema) {
   );
 }
 
-export default async function (
-  tree: Tree,
-  options: PluginsNxContainersGeneratorSchema
-) {
+export default async function (tree: Tree, options: AppGeneratorSchema) {
   const normalizedOptions = normalizeOptions(tree, options);
   addProjectConfiguration(tree, normalizedOptions.projectName, {
     root: normalizedOptions.projectRoot,
-    projectType: 'library',
+    projectType: 'application',
     sourceRoot: `${normalizedOptions.projectRoot}/src`,
     targets: {
       build: {
         executor: '@narcisse-app/nx-containers:build',
+      },
+      serve: {
+        executor: '@narcisse-app/nx-containers:serve',
       },
     },
     tags: normalizedOptions.parsedTags,
