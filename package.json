@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.0.3",
+    "@commitlint/config-conventional": "^17.1.0",
     "@docusaurus/module-type-aliases": "^2.0.1",
     "@emotion/babel-plugin": "11.10.2",
     "@nestjs/schematics": "^9.0.0",
