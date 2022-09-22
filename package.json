@@ -16,7 +16,7 @@
     "@emotion/styled": "11.10.4",
     "@mdx-js/react": "^1.6.21",
     "@nestjs/common": "^9.1.2",
-    "@nestjs/core": "^9.1.1",
+    "@nestjs/core": "^9.1.2",
     "@nestjs/platform-express": "^9.1.2",
     "clsx": "^1.1.1",
     "core-js": "^3.25.2",
