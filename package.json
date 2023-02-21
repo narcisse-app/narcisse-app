@@ -13,7 +13,7 @@
     "@docusaurus/core": "^2.0.1",
     "@docusaurus/preset-classic": "^2.1.0",
     "@emotion/react": "11.10.4",
-    "@emotion/styled": "11.10.4",
+    "@emotion/styled": "11.10.6",
     "@mdx-js/react": "^1.6.21",
     "@nestjs/common": "^9.1.4",
     "@nestjs/core": "^9.1.4",
