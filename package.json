@@ -19,7 +19,7 @@
     "@nestjs/core": "^9.1.4",
     "@nestjs/platform-express": "^9.3.9",
     "clsx": "^1.1.1",
-    "core-js": "^3.25.5",
+    "core-js": "^3.28.0",
     "prism-react-renderer": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
