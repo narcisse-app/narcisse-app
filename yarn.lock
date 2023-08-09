@@ -2844,13 +2844,13 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
-"@prettier/plugin-xml@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-xml/-/plugin-xml-2.2.0.tgz#2bc2ae667aa817369fdb939aa7d36ea88105483d"
-  integrity sha512-UWRmygBsyj4bVXvDiqSccwT1kmsorcwQwaIy30yVh8T+Gspx4OlC0shX1y+ZuwXZvgnafmpRYKks0bAu9urJew==
+"@prettier/plugin-xml@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-xml/-/plugin-xml-3.1.0.tgz#dd0cc9750df5fd21728783e3886e5d35db620f29"
+  integrity sha512-0RskvTvwQzTOq3nKXjHT7mnTUs/b8xh1iONC0lEYyWRtSHseE2N8pEvdYSy/7dIKEA34aPHKGrSAmKjK2xPAtQ==
   dependencies:
     "@xml-tools/parser" "^1.0.11"
-    prettier ">=2.4.0"
+    prettier ">=3.0.0"
 
 "@remix-run/router@1.0.2":
   version "1.0.2"
@@ -10773,7 +10773,12 @@ prettier-plugin-sh@^0.12.8:
     sh-syntax "^0.3.6"
     synckit "^0.8.1"
 
-prettier@>=2.4.0, prettier@^2.8.4:
+prettier@>=3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.0.1.tgz#65271fc9320ce4913c57747a70ce635b30beaa40"
+  integrity sha512-fcOWSnnpCrovBsmFZIGIy9UqK2FaI7Hqax+DIO0A9UxeVoY4iweyaFjS5TavZN97Hfehph0nhsZnjlVKzEQSrQ==
+
+prettier@^2.8.4:
   version "2.8.4"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.4.tgz#34dd2595629bfbb79d344ac4a91ff948694463c3"
   integrity sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==
